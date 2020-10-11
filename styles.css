@@ -1,0 +1,43 @@
+*{
+    background-color:white;
+    
+}
+
+
+.page{
+    width: 800px;
+    margin: 0 auto;
+    
+
+}
+
+.intro{
+    font-size: x-large;
+}
+.icons{
+    width: 25px;
+    height: 25px;
+}
+.links-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+.s-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    align-items: flex-start;
+
+}
+.links{
+    margin-left: 5px;
+    padding: 3px;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#a786df;
+    text-decoration: underline;
+}
