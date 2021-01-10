@@ -22,7 +22,7 @@ h1{
 .links-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   
   
 }
@@ -67,19 +67,34 @@ h1{
 }
 
 .links{
+    
     font-family: monospace;
     font-size: 20px;
-    margin-left: 8px;
+    margin-left: 10px;
     padding-top: 5px;
     padding-left: 3px;
     text-decoration:none;
+
 }
 
-a:hover {
-    color:#a786df;
-    text-decoration: underline;
-}
-
+.links:link {
+    color: black;
+  }
+  
+  
+  .links:visited {
+    color: #6246ea;
+  }
+  
+ 
+  .links:hover {
+    color: #d1d1e9;
+  }
+  
+  
+  .links:active {
+    color: #d1d1e9;
+  }
 @media only screen and (max-width:400px){
     .page{
         width: 90%;
