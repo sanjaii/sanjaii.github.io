@@ -16,6 +16,7 @@ h1{
 .intro{
     font-size: 14px;
     text-align: justify;
+    line-height: 1.6;
   
 }
 
@@ -100,7 +101,7 @@ h1{
         width: 90%;
     }
     .intro{
-        font-size: 15px;
+        font-size: 14px;
     }
     h1{
         font-size: 35px;
@@ -124,7 +125,7 @@ h1{
         
     }
     .intro{
-        font-size: 23px;
+        font-size: 14px;
     }
     h1{
         font-size: 40px;
@@ -141,7 +142,7 @@ h1{
         
     }
     .intro{
-        font-size: 27px;
+        font-size: 14px;
     }
     h1{
         font-size: 45px;
