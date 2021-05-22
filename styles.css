@@ -1,16 +1,30 @@
 * {
   background-color: white;
   font-family: Consolas, monaco, monospace;
-}
-h1 {
-  font-size: 50px;
-}
 
+}
+body{
+
+  margin: 0 auto;
+  width: 50%;
+
+}
 .page {
   margin: 0 auto;
-  width: 55%;
+  width: 70%;
 }
-
+ul li::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.66em;
+}
 .intro {
   font-size: 14px;
   text-align: justify;
@@ -31,10 +45,6 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.book-img {
-  height: 270px;
-  width: 220px;
-}
 .book-title {
   text-decoration: solid;
   font-size: 20px;
@@ -49,16 +59,25 @@ h1 {
   padding-left: 3px;
   text-decoration: none;
 }
-.margin{
-    margin-top: 10px;
-}
 .links:link {
   color: black;
 }
 .links:hover {
   color: #ff6e6c !important;
 }
-@media only screen and(max-width:400px) {
+.small{
+  font-size: .8em;
+}
+.muted{
+  color: #aaa !important;
+  text-decoration: none !important;
+}
+
+
+@media (max-width:400px) {
+  body{
+    width: 90% !important;
+  }
   .page {
     width: 90%;
   }
@@ -69,7 +88,7 @@ h1 {
     font-size: 35px;
   }
   h2 {
-    font-size: 12px;
+    font-size: 25px;
   }
   .links-container {
     font-size: 12px;
@@ -79,7 +98,10 @@ h1 {
   }
 }
 
-@media only screen and(min-width:401px) and(max-width:700px) {
+@media (min-width:401px) and (max-width:700px) {
+  body{
+    width: 90%;
+  }
   .page {
     width: 90%;
   }
@@ -96,7 +118,10 @@ h1 {
     font-size: 17px;
   }
 }
-@media only screen and(min-width:700px) and(max-width:960px) {
+@media (min-width:700px) and(max-width:960px) {
+  body{
+    width: 70%;
+  }
   .page {
     width: 70%;
   }
