@@ -1,141 +1,171 @@
 * {
-  background-color: white;
-  font-family: Consolas, monaco, monospace;
+    background-color: white;
+    font-family: Consolas, monaco, monospace;
 
 }
-body{
 
-  margin: 0 auto;
-  width: 50%;
+body {
+
+    margin: 0 auto;
+    width: 50%;
 
 }
+
 .page {
-  margin: 0 auto;
-  width: 70%;
+    margin: 0 auto;
+    width: 70%;
 }
+
 ul li::marker {
-  unicode-bidi: isolate;
-  font-variant-numeric: tabular-nums;
-  text-transform: none;
-  text-indent: 0px !important;
-  text-align: start !important;
-  text-align-last: start !important;
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
 }
+
 li {
-  margin-top: 0.5em;
-  margin-bottom: 0.66em;
+    margin-top: 0.5em;
+    margin-bottom: 0.66em;
 }
+
 .intro {
-  font-size: 14px;
-  text-align: justify;
-  line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .links-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
+
 .s-container {
-  display: flex;
-  padding-top: 15px;
+    display: flex;
+    padding-top: 15px;
 }
 
 .book {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .book-title {
-  text-decoration: solid;
-  font-size: 20px;
-  margin-top: 5px;
-  align-self: flex-start;
+    text-decoration: solid;
+    font-size: 20px;
+    margin-top: 5px;
+    align-self: flex-start;
 }
 
 .links {
-  font-size: 20px;
-  margin-left: 10px;
-  padding-top: 5px;
-  padding-left: 3px;
-  text-decoration: none;
-}
-.links:link {
-  color: black;
-}
-.links:hover {
-  color: #ff6e6c !important;
-}
-.small{
-  font-size: .8em;
-}
-.muted{
-  color: #aaa !important;
-  text-decoration: none !important;
-}
-
-
-@media (max-width:400px) {
-  body{
-    width: 90% !important;
-  }
-  .page {
-    width: 90%;
-  }
-  .intro {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  .links-container {
-    font-size: 12px;
-  }
-  .links {
-    font-size: 13px;
-  }
-}
-
-@media (min-width:401px) and (max-width:700px) {
-  body{
-    width: 90%;
-  }
-  .page {
-    width: 90%;
-  }
-  .book{
-    width: 90%;
-  }
-  .intro {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  .links {
-    font-size: 17px;
-  }
-}
-@media (min-width:700px) and(max-width:960px) {
-  body{
-    width: 70%;
-  }
-  .page {
-    width: 70%;
-  }
-  .book{
-    width: 70%;
-  }
-  .intro {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 45px;
-  }
-
-  .links {
     font-size: 20px;
-  }
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-left: 3px;
+    text-decoration: none;
+}
+
+.links:link {
+    color: black;
+}
+
+.links:hover {
+    color: #ff6e6c !important;
+}
+
+.small {
+    font-size: .8em;
+}
+
+.muted {
+    color: #aaa !important;
+    text-decoration: none !important;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    body {
+        width: 90% !important;
+    }
+
+    .page {
+        width: 90%;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .links-container {
+        font-size: 12px;
+    }
+
+    .links {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 700px) {
+    body {
+        width: 90%;
+    }
+
+    .page {
+        width: 90%;
+    }
+
+    .book {
+        width: 90%;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .links {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 700px) and(max-width: 960px) {
+    body {
+        width: 70%;
+    }
+
+    .page {
+        width: 70%;
+    }
+
+    .book {
+        width: 70%;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .links {
+        font-size: 20px;
+    }
 }
