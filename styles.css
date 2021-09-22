@@ -11,11 +11,6 @@ body {
 
 }
 
-.page {
-    margin: 0 auto;
-    width: 70%;
-}
-
 ul li::marker {
     unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;
@@ -35,43 +30,8 @@ li {
     line-height: 1.6;
 }
 
-.links-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.s-container {
-    display: flex;
-    padding-top: 15px;
-}
-
-.book {
-    display: flex;
-    flex-direction: column;
-}
-
-.book-title {
-    text-decoration: solid;
-    font-size: 20px;
-    margin-top: 5px;
-    align-self: flex-start;
-}
-
-.links {
-    font-size: 20px;
-    margin-left: 10px;
-    padding-top: 5px;
-    padding-left: 3px;
-    text-decoration: none;
-}
-
-.links:link {
-    color: black;
-}
-
-.links:hover {
-    color: #ff6e6c !important;
+.els{
+    font-size: 14px;
 }
 
 .small {
@@ -81,20 +41,22 @@ li {
 .muted {
     color: #aaa !important;
     text-decoration: none !important;
+    font-size: 14px;
 }
 
 .foot {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.host{
+    font-size: .7em;
+
 }
 
 @media (max-width: 400px) {
     body {
         width: 90% !important;
-    }
-
-    .page {
-        width: 90%;
     }
 
     .intro {
@@ -108,29 +70,12 @@ li {
     h2 {
         font-size: 25px;
     }
-
-    .links-container {
-        font-size: 12px;
-    }
-
-    .links {
-        font-size: 13px;
-    }
 }
 
 @media (min-width: 401px) and (max-width: 700px) {
     body {
         width: 90%;
     }
-
-    .page {
-        width: 90%;
-    }
-
-    .book {
-        width: 90%;
-    }
-
     .intro {
         font-size: 14px;
     }
@@ -138,22 +83,10 @@ li {
     h1 {
         font-size: 40px;
     }
-
-    .links {
-        font-size: 17px;
-    }
 }
 
 @media (min-width: 700px) and(max-width: 960px) {
     body {
-        width: 70%;
-    }
-
-    .page {
-        width: 70%;
-    }
-
-    .book {
         width: 70%;
     }
 
@@ -163,9 +96,5 @@ li {
 
     h1 {
         font-size: 45px;
-    }
-
-    .links {
-        font-size: 20px;
     }
 }
